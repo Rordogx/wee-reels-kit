@@ -1,0 +1,91 @@
+version: 1
+id: northlane
+seed: 4
+fps: 24
+client:
+  name: Northlane Roofing
+  trade: Roofing
+  tagline: Roofs that stay put
+  phone: "01632 960014"
+  web: northlane.example
+  logo: assets/logo.png
+  colours:
+    gold: "#E8B23A"
+    ink: "#F3EEE4"
+    muted: "#AAA69E"
+    charcoal: "#141416"
+    glow: "#E89628"
+music:
+  bpm: 96
+  mood: warm
+voiceover:
+  synth: true
+captions:
+  timing: line
+sfx:
+  whoosh: true
+  tick: true
+  riser: true
+formats: ["9:16", "4:5", "1:1"]
+scenes:
+  - type: intro
+    duration: 1.875
+  - type: hook
+    duration: 2.5
+    tag: Storm season
+    headline: "One gale from the wrong bill"
+    sub: "The leak starts under a tile you cannot see from the street."
+  - type: before_after
+    duration: 3.125
+    before: assets/before.png
+    after: assets/after.png
+    before_label: Before
+    after_label: After
+  - type: checklist
+    duration: 3.75
+    tag: The work
+    title: "Done once. Done properly."
+    items:
+      - "Strip, felt and batten"
+      - "Slate matched to the street"
+      - "Scaffold inside the quote"
+  - type: title
+    duration: 1.875
+    tag: This month
+    headline: "A survey in writing"
+    sub: "We'll tell you if it can wait."
+  - type: end
+    duration: 2.5
+    cta: "Book a survey"
+script:
+  - "One gale from the wrong kind of bill."
+  - "A tired roof, then a sound one."
+  - "Felt, batten, matched slate. Scaffold in the quote."
+  - "A written survey, before you spend."
+variants:
+  - id: stain
+    hook: "That stain started on the roof"
+    sub: "The ceiling is only where you noticed it."
+    music:
+      bpm: 108
+      mood: drive
+    colours:
+      gold: "#E0A15A"
+    script:
+      - "That stain on the ceiling started on the roof."
+      - "A tired roof, then a sound one."
+      - "Felt, batten, matched slate. Scaffold in the quote."
+      - "A written survey, before you spend."
+  - id: champagne
+    hook: "Next door went last winter"
+    tag: Before the next one
+    music:
+      bpm: 88
+      mood: calm
+    colours:
+      gold: "#D9C7A0"
+    script:
+      - "The roof next door went last winter."
+      - "A tired roof, then a sound one."
+      - "Felt, batten, matched slate. Scaffold in the quote."
+      - "A written survey, before you spend."

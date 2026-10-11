@@ -1,0 +1,80 @@
+version: 1
+id: mothbrae
+seed: 11
+fps: 24
+client:
+  name: Mothbrae Lodge
+  trade: Holiday let
+  tagline: Quiet weeks, properly hosted
+  phone: "01632 960188"
+  web: mothbrae.example
+  logo: assets/logo.png
+  colours:
+    gold: "#E2B15A"
+    ink: "#F4EFE6"
+    muted: "#B7B1A6"
+    charcoal: "#16181C"
+    glow: "#D8894A"
+music:
+  bpm: 90
+  mood: calm
+voiceover:
+  synth: true
+captions:
+  timing: beat
+  beats_per_line: 3
+sfx:
+  whoosh: true
+  tick: true
+  riser: true
+formats: ["9:16", "4:5", "1:1"]
+scenes:
+  - type: intro
+    duration: 2
+  - type: hook
+    duration: 2.667
+    tag: Glen Avrie
+    headline: "The fire is already lit"
+    sub: "A lodge for the weeks you actually switch off."
+  - type: before_after
+    duration: 3.333
+    before: assets/before.png
+    after: assets/after.png
+    before_label: The track
+    after_label: The lodge
+  - type: checklist
+    duration: 4
+    tag: The stay
+    title: "What is waiting"
+    items:
+      - "A stove already going"
+      - "A path down to the water"
+      - "Four nights, properly quiet"
+  - type: title
+    duration: 2
+    tag: Open weeks
+    headline: "Come up midweek"
+    sub: "The glen is better when the road is empty."
+  - type: end
+    duration: 2.667
+    cta: "See the weeks"
+script:
+  - "The fire is lit. The glen does the rest."
+  - "Down the track, and you are there."
+  - "A stove, a path, a quiet week."
+  - "Come up while the road is empty."
+variants:
+  - id: weeknight
+    hook: "Come up on a weeknight"
+    music:
+      bpm: 102
+      mood: warm
+    colours:
+      gold: "#E8B23A"
+  - id: after-frost
+    hook: "After the frost, it goes quiet"
+    music:
+      bpm: 84
+      mood: calm
+    colours:
+      gold: "#D5D0C4"
